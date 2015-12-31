@@ -9,22 +9,22 @@
 import Foundation
 
 public class MazeCell {
-  var row: Int = 0
-  var column: Int = 0
-  var north, south, east, west: MazeCell?
-  var key: String
+  public var row: Int = 0
+  public var column: Int = 0
+  public var north, south, east, west: MazeCell?
+  public var key: String
   
-  var links = Dictionary<String, Bool>()
+  public var links = Dictionary<String, Bool>()
   
   
-  init(row: Int, col: Int) {
+  public init(row: Int, col: Int) {
     self.row = row
     self.column = col
     self.key = "\(col)|\(row)"
   }
   
   
-  func link(aCell: MazeCell, bidi: Bool = true) {
+  public func link(aCell: MazeCell, bidi: Bool = true) {
     self.links.updateValue(bidi, forKey: aCell.key)
     //    print("Linking \(aCell.key) to me (\(key))")
     if bidi {
@@ -32,7 +32,7 @@ public class MazeCell {
     }
   }
   
-  func unlink(aCell: MazeCell, bidi: Bool = true) {
+  public func unlink(aCell: MazeCell, bidi: Bool = true) {
     self.links.removeValueForKey(aCell.key)
     //    print("Unlinking \(aCell.key) from me (\(key))")
     if bidi {
@@ -40,11 +40,11 @@ public class MazeCell {
     }
   }
   
-  func isLinkedToCell(aCell:MazeCell) -> Bool {
+  public func isLinkedToCell(aCell:MazeCell) -> Bool {
     return links[aCell.key] != nil
   }
   
-  func neighbors() -> Array<MazeCell> {
+  public func neighbors() -> Array<MazeCell> {
     var myNeighbors = [MazeCell]()
     
     if let aCell:MazeCell = north {
@@ -65,7 +65,7 @@ public class MazeCell {
     return myNeighbors
   }
   
-  func describe() -> String {
+  public func describe() -> String {
     var result = ""
     result += "Cell \(key)"
     return result

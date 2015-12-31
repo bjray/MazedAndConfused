@@ -10,9 +10,9 @@ import Foundation
 import GameplayKit
 
 public class Sidewinder {
-  var maze: MazeGrid
+  public var maze: MazeGrid
   
-  init(aGrid: MazeGrid) {
+  public init(aGrid: MazeGrid) {
     aGrid.eachRow { (aRow) -> Void in
       var run = [MazeCell]()
       

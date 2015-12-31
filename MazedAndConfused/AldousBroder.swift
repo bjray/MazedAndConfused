@@ -9,9 +9,9 @@
 import Foundation
 
 public class AldousBroder {
-  var maze: MazeGrid
+  public var maze: MazeGrid
   
-  init(aGrid: MazeGrid) {
+  public init(aGrid: MazeGrid) {
     var aCell = aGrid.randomCell()
     var unvisited = aGrid.size() - 1
     

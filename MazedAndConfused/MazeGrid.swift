@@ -10,12 +10,12 @@ import Foundation
 import GameplayKit
 
 public class MazeGrid {
-  var rows, columns: Int
-  var grid = Array<Array<MazeCell>>()
-  var randomR:GKRandomDistribution
-  var randomC:GKRandomDistribution
+  public var rows, columns: Int
+  public var grid = Array<Array<MazeCell>>()
+  public var randomR:GKRandomDistribution
+  public var randomC:GKRandomDistribution
   
-  init(rows: Int, columns: Int) {
+  public init(rows: Int, columns: Int) {
     self.rows = rows
     self.columns = columns
     randomR = GKRandomDistribution(lowestValue: 0, highestValue: rows-1)
@@ -24,7 +24,7 @@ public class MazeGrid {
     configureCells()
   }
   
-  func prepareGrid() {
+  public func prepareGrid() {
     for row in 0..<rows {
       
       var colArray = [MazeCell]()
@@ -35,7 +35,7 @@ public class MazeGrid {
     }
   }
   
-  func configureCells() {
+  public func configureCells() {
     for row in 0..<rows {
       for col in 0..<columns {
         let aCell = grid[row][col]
@@ -50,7 +50,7 @@ public class MazeGrid {
     }
   }
   
-  func cellAt(row: Int, column: Int) -> MazeCell? {
+  public func cellAt(row: Int, column: Int) -> MazeCell? {
     if case 0..<rows = row {
       if case 0..<grid[row].count = column {
         return grid[row][column]
@@ -59,7 +59,7 @@ public class MazeGrid {
     return nil
   }
   
-  func describe() -> String {
+  public func describe() -> String {
     let base = "---+"
     var output: String = "+"
     for _ in 0..<columns {
@@ -103,24 +103,24 @@ public class MazeGrid {
     return output
   }
   
-  func randomCell() -> MazeCell {
+  public func randomCell() -> MazeCell {
     let r = randomR.nextInt()
     let c = randomC.nextInt()
     return cellAt(r, column: c)!
   }
   
-  func size() -> Int {
+  public func size() -> Int {
     return rows * columns
   }
   
-  func eachRow(operation: (Array<MazeCell>)->Void) -> Void {
+  public func eachRow(operation: (Array<MazeCell>)->Void) -> Void {
     for aRow in grid {
       operation(aRow)
       
     }
   }
   
-  func eachCell(operation:(MazeCell) ->Void) ->Void {
+  public func eachCell(operation:(MazeCell) ->Void) ->Void {
     eachRow { (row) -> Void in
       for aCell in row {
         operation(aCell)

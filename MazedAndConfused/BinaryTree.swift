@@ -9,9 +9,9 @@
 import Foundation
 
 public class BinaryTree {
-  var maze: MazeGrid
+  public var maze: MazeGrid
   
-  init(aGrid: MazeGrid) {
+  public init(aGrid: MazeGrid) {
     aGrid.eachCell { (aCell) -> Void in
       var neighbors = [MazeCell]()
       
