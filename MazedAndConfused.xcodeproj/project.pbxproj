@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B65D0EE91C4D7E6B00AA59A1 /* DungeonSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0EE81C4D7E6B00AA59A1 /* DungeonSegment.swift */; };
+		B65D0EEA1C4D7E6B00AA59A1 /* DungeonSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0EE81C4D7E6B00AA59A1 /* DungeonSegment.swift */; };
+		B65D0EEC1C4D7F0900AA59A1 /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0EEB1C4D7F0900AA59A1 /* Dungeon.swift */; };
+		B65D0EED1C4D7F0900AA59A1 /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0EEB1C4D7F0900AA59A1 /* Dungeon.swift */; };
+		B65D0F181C4D88D400AA59A1 /* BSDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0F171C4D88D400AA59A1 /* BSDGenerator.swift */; };
+		B65D0F191C4D88D400AA59A1 /* BSDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0F171C4D88D400AA59A1 /* BSDGenerator.swift */; };
 		B69E6A2F1C31B77700BC6FAC /* MazedAndConfused.h in Headers */ = {isa = PBXBuildFile; fileRef = B69E6A2E1C31B77700BC6FAC /* MazedAndConfused.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B69E6A361C31B77800BC6FAC /* MazedAndConfused.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69E6A2B1C31B77700BC6FAC /* MazedAndConfused.framework */; };
 		B69E6A3B1C31B77800BC6FAC /* MazedAndConfusedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E6A3A1C31B77800BC6FAC /* MazedAndConfusedTests.swift */; };
@@ -35,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B65D0EE81C4D7E6B00AA59A1 /* DungeonSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DungeonSegment.swift; sourceTree = "<group>"; };
+		B65D0EEB1C4D7F0900AA59A1 /* Dungeon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dungeon.swift; sourceTree = "<group>"; };
+		B65D0F171C4D88D400AA59A1 /* BSDGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSDGenerator.swift; sourceTree = "<group>"; };
 		B69E6A2B1C31B77700BC6FAC /* MazedAndConfused.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MazedAndConfused.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69E6A2E1C31B77700BC6FAC /* MazedAndConfused.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazedAndConfused.h; sourceTree = "<group>"; };
 		B69E6A301C31B77700BC6FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +106,9 @@
 				B69E6A4E1C31B80400BC6FAC /* BinaryTree.swift */,
 				B69E6A511C31B80F00BC6FAC /* Sidewinder.swift */,
 				B69E6A541C31B82300BC6FAC /* AldousBroder.swift */,
+				B65D0EE81C4D7E6B00AA59A1 /* DungeonSegment.swift */,
+				B65D0EEB1C4D7F0900AA59A1 /* Dungeon.swift */,
+				B65D0F171C4D88D400AA59A1 /* BSDGenerator.swift */,
 			);
 			path = MazedAndConfused;
 			sourceTree = "<group>";
@@ -220,12 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65D0EEC1C4D7F0900AA59A1 /* Dungeon.swift in Sources */,
 				B69E6A4F1C31B80400BC6FAC /* BinaryTree.swift in Sources */,
 				B69E6A551C31B82300BC6FAC /* AldousBroder.swift in Sources */,
 				B69E6A4C1C31B7EC00BC6FAC /* ArrayExtension.swift in Sources */,
 				B69E6A491C31B7D600BC6FAC /* MazeGrid.swift in Sources */,
 				B69E6A461C31B7CA00BC6FAC /* MazeCell.swift in Sources */,
+				B65D0F181C4D88D400AA59A1 /* BSDGenerator.swift in Sources */,
 				B69E6A521C31B80F00BC6FAC /* Sidewinder.swift in Sources */,
+				B65D0EE91C4D7E6B00AA59A1 /* DungeonSegment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69E6A561C31B82300BC6FAC /* AldousBroder.swift in Sources */,
+				B65D0EED1C4D7F0900AA59A1 /* Dungeon.swift in Sources */,
 				B69E6A471C31B7CA00BC6FAC /* MazeCell.swift in Sources */,
+				B65D0F191C4D88D400AA59A1 /* BSDGenerator.swift in Sources */,
+				B65D0EEA1C4D7E6B00AA59A1 /* DungeonSegment.swift in Sources */,
 				B69E6A3B1C31B77800BC6FAC /* MazedAndConfusedTests.swift in Sources */,
 				B69E6A501C31B80400BC6FAC /* BinaryTree.swift in Sources */,
 				B69E6A4A1C31B7D600BC6FAC /* MazeGrid.swift in Sources */,
@@ -417,6 +435,7 @@
 				B69E6A411C31B77800BC6FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B69E6A421C31B77800BC6FAC /* Build configuration list for PBXNativeTarget "MazedAndConfusedTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +444,7 @@
 				B69E6A441C31B77800BC6FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
